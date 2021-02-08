@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ListItem from "./ListItem";
 import "./../styles/App.css";
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
         value={newitem}
       ></textarea>
       <button id="btn" onClick={additem} disabled={newitem.trim().length === 0}>
-        Add item
+        Add
       </button>
       {items.map((item, idx) => (
         <ListItem
